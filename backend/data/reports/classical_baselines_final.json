@@ -1,0 +1,185 @@
+{
+  "research_question": "Does the ML predictor improve held-out probability quality over classical educational baselines?",
+  "data_status": "synthetic bootstrap interaction log",
+  "split": {
+    "strategy": "group_holdout",
+    "train_rows": 10800,
+    "validation_rows": 3600,
+    "train_users": 135,
+    "validation_users": 45,
+    "user_overlap": 0
+  },
+  "primary_predictive_metric": "Brier score (lower is better)",
+  "models": [
+    {
+      "name": "ML adaptive predictor",
+      "family": "hist_gradient_boosting",
+      "parameters": {
+        "max_iter": 80,
+        "learning_rate": 0.045,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 0.8
+      },
+      "metrics": {
+        "accuracy": 0.715,
+        "precision": 0.7296943231441048,
+        "recall": 0.8041385948026949,
+        "f1": 0.7651098901098901,
+        "log_loss": 0.5591986700306258,
+        "brier": 0.18911292699101523,
+        "roc_auc": 0.7763890276585061,
+        "pr_auc": 0.8172750423919677
+      }
+    },
+    {
+      "name": "IRT-2PL online",
+      "family": "irt_2pl",
+      "parameters": {
+        "learning_rate": 0.03
+      },
+      "metrics": {
+        "accuracy": 0.6897222222222222,
+        "precision": 0.7455288707204906,
+        "recall": 0.7021174205967277,
+        "f1": 0.723172242874845,
+        "log_loss": 0.5907832357536967,
+        "brier": 0.20161200663724468,
+        "roc_auc": 0.7542325962874947,
+        "pr_auc": 0.7994765619594141
+      }
+    },
+    {
+      "name": "Elo",
+      "family": "elo",
+      "parameters": {
+        "k_user": 0.32,
+        "k_item": 0.128
+      },
+      "metrics": {
+        "accuracy": 0.6877777777777778,
+        "precision": 0.7077526132404182,
+        "recall": 0.7820019249278152,
+        "f1": 0.7430269775948788,
+        "log_loss": 0.5881377552809017,
+        "brier": 0.20185178099004034,
+        "roc_auc": 0.742415695876582,
+        "pr_auc": 0.7918667686446301
+      }
+    },
+    {
+      "name": "PFA",
+      "family": "pfa",
+      "parameters": {
+        "intercept": 0.0,
+        "success_weight": 0.28,
+        "failure_weight": -0.3,
+        "difficulty_weight": 2.25
+      },
+      "metrics": {
+        "accuracy": 0.6541666666666667,
+        "precision": 0.7211895910780669,
+        "recall": 0.6535129932627527,
+        "f1": 0.6856854329714719,
+        "log_loss": 0.6316385194123073,
+        "brier": 0.21843454336724216,
+        "roc_auc": 0.7089607476611874,
+        "pr_auc": 0.7606160644340819
+      }
+    },
+    {
+      "name": "BKT",
+      "family": "bkt",
+      "parameters": {
+        "p_init": 0.3,
+        "p_learn": 0.08,
+        "p_guess": 0.22,
+        "p_slip": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.5969444444444445,
+        "precision": 0.6476683937823834,
+        "recall": 0.6616939364773821,
+        "f1": 0.654606046179481,
+        "log_loss": 0.6981475897804796,
+        "brier": 0.24825403788262349,
+        "roc_auc": 0.6256293641288057,
+        "pr_auc": 0.6877502956260257
+      }
+    }
+  ],
+  "ml_vs_classical": [
+    {
+      "baseline": "Elo",
+      "paired_users": 45,
+      "mean_user_brier_difference_ml_minus_baseline": {
+        "estimate": -0.012738853999025126,
+        "lower": -0.016651046514772092,
+        "upper": -0.00883602469110897,
+        "confidence": 0.95,
+        "samples": 45
+      },
+      "p_value_one_sided_ml_lower": 4.999750012499375e-05,
+      "p_value_two_sided": 4.999750012499375e-05,
+      "paired_effect_dz": -0.9555045140220432,
+      "p_value_holm_two_sided": 0.000199990000499975,
+      "ml_significantly_lower_brier": true
+    },
+    {
+      "baseline": "IRT-2PL online",
+      "paired_users": 45,
+      "mean_user_brier_difference_ml_minus_baseline": {
+        "estimate": -0.012499079646229464,
+        "lower": -0.016476498390551736,
+        "upper": -0.008489319261679293,
+        "confidence": 0.95,
+        "samples": 45
+      },
+      "p_value_one_sided_ml_lower": 9.99950002499875e-05,
+      "p_value_two_sided": 9.99950002499875e-05,
+      "paired_effect_dz": -0.8688139731922495,
+      "p_value_holm_two_sided": 0.000199990000499975,
+      "ml_significantly_lower_brier": true
+    },
+    {
+      "baseline": "BKT",
+      "paired_users": 45,
+      "mean_user_brier_difference_ml_minus_baseline": {
+        "estimate": -0.059141110891608256,
+        "lower": -0.06757652517270633,
+        "upper": -0.0506707635367629,
+        "confidence": 0.95,
+        "samples": 45
+      },
+      "p_value_one_sided_ml_lower": 4.999750012499375e-05,
+      "p_value_two_sided": 4.999750012499375e-05,
+      "paired_effect_dz": -2.1007851809131166,
+      "p_value_holm_two_sided": 0.000199990000499975,
+      "ml_significantly_lower_brier": true
+    },
+    {
+      "baseline": "PFA",
+      "paired_users": 45,
+      "mean_user_brier_difference_ml_minus_baseline": {
+        "estimate": -0.029321616376226937,
+        "lower": -0.03318553670673635,
+        "upper": -0.025380000603009614,
+        "confidence": 0.95,
+        "samples": 45
+      },
+      "p_value_one_sided_ml_lower": 4.999750012499375e-05,
+      "p_value_two_sided": 4.999750012499375e-05,
+      "paired_effect_dz": -2.1845484210420034,
+      "p_value_holm_two_sided": 0.000199990000499975,
+      "ml_significantly_lower_brier": true
+    }
+  ],
+  "best_by_brier": "ML adaptive predictor",
+  "method_notes": [
+    "The ML candidate is rebuilt on the original training-user split and evaluated on the original held-out users.",
+    "IRT, BKT and PFA update only a learner's past state before predicting the next attempt; the current outcome is never used in its own prediction.",
+    "Elo item ratings are learned on training users and frozen during held-out evaluation; only the held-out learner state adapts online.",
+    "Baseline hyperparameters are selected on the training-user partition only.",
+    "Paired significance tests use per-user mean Brier loss to avoid treating repeated attempts from one learner as independent subjects.",
+    "Two-sided paired randomization p-values are adjusted across the four classical-baseline comparisons with the Holm procedure; one-sided values are retained only as descriptive directional statistics."
+  ]
+}

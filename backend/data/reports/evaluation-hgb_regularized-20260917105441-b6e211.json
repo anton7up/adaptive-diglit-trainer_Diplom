@@ -1,0 +1,472 @@
+{
+  "metrics": {
+    "accuracy": 0.7394444444444445,
+    "precision": 0.7570762052877138,
+    "recall": 0.8382504878888761,
+    "f1": 0.7955981695358466,
+    "log_loss": 0.5240477334379597,
+    "brier": 0.174963825381422,
+    "roc_auc": 0.8048960871809542,
+    "pr_auc": 0.8590029255274145
+  },
+  "calibration": {
+    "samples": 14400,
+    "positive_rate": 0.6049305555555555,
+    "mean_probability": 0.6048200971082924,
+    "ece": 0.025316941682768854,
+    "mce": 0.07861114085781463,
+    "log_loss": 0.5240477334379597,
+    "slope": 1.1983612386341007,
+    "intercept": -0.06321474141369761,
+    "brier_decomposition": {
+      "brier": 0.174963825381422,
+      "reliability": 0.0008815288507856,
+      "resolution": 0.06416107498436593,
+      "uncertainty": 0.23898957851080246,
+      "identity_residual": -0.000746206995800136
+    },
+    "bins": [
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 670,
+        "mean_probability": 0.16816337966378478,
+        "observed_rate": 0.08955223880597014,
+        "absolute_gap": 0.07861114085781463
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.30000000000000004,
+        "count": 1180,
+        "mean_probability": 0.2497091282805738,
+        "observed_rate": 0.21271186440677967,
+        "absolute_gap": 0.03699726387379412
+      },
+      {
+        "lower": 0.30000000000000004,
+        "upper": 0.4,
+        "count": 1385,
+        "mean_probability": 0.3500224656351464,
+        "observed_rate": 0.3234657039711191,
+        "absolute_gap": 0.026556761664027262
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 1520,
+        "mean_probability": 0.4498284413029978,
+        "observed_rate": 0.4276315789473684,
+        "absolute_gap": 0.0221968623556294
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6000000000000001,
+        "count": 1817,
+        "mean_probability": 0.5534618039981255,
+        "observed_rate": 0.5454045129334067,
+        "absolute_gap": 0.008057291064718752
+      },
+      {
+        "lower": 0.6000000000000001,
+        "upper": 0.7000000000000001,
+        "count": 2024,
+        "mean_probability": 0.6505370029951945,
+        "observed_rate": 0.6724308300395256,
+        "absolute_gap": 0.021893827044331182
+      },
+      {
+        "lower": 0.7000000000000001,
+        "upper": 0.8,
+        "count": 2207,
+        "mean_probability": 0.7518462787155443,
+        "observed_rate": 0.7607612143180789,
+        "absolute_gap": 0.008914935602534535
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 2286,
+        "mean_probability": 0.8490832003489444,
+        "observed_rate": 0.8832020997375328,
+        "absolute_gap": 0.034118899388588475
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 1311,
+        "mean_probability": 0.9236513286640756,
+        "observed_rate": 0.9549961861174676,
+        "absolute_gap": 0.031344857453391994
+      }
+    ]
+  },
+  "calibration_bins": [
+    {
+      "bin": 1,
+      "from": 0.1,
+      "to": 0.2,
+      "count": 670,
+      "mean_probability": 0.16816337966378478,
+      "observed_rate": 0.08955223880597014,
+      "gap": 0.07861114085781463
+    },
+    {
+      "bin": 2,
+      "from": 0.2,
+      "to": 0.30000000000000004,
+      "count": 1180,
+      "mean_probability": 0.2497091282805738,
+      "observed_rate": 0.21271186440677967,
+      "gap": 0.03699726387379412
+    },
+    {
+      "bin": 3,
+      "from": 0.30000000000000004,
+      "to": 0.4,
+      "count": 1385,
+      "mean_probability": 0.3500224656351464,
+      "observed_rate": 0.3234657039711191,
+      "gap": 0.026556761664027262
+    },
+    {
+      "bin": 4,
+      "from": 0.4,
+      "to": 0.5,
+      "count": 1520,
+      "mean_probability": 0.4498284413029978,
+      "observed_rate": 0.4276315789473684,
+      "gap": 0.0221968623556294
+    },
+    {
+      "bin": 5,
+      "from": 0.5,
+      "to": 0.6000000000000001,
+      "count": 1817,
+      "mean_probability": 0.5534618039981255,
+      "observed_rate": 0.5454045129334067,
+      "gap": 0.008057291064718752
+    },
+    {
+      "bin": 6,
+      "from": 0.6000000000000001,
+      "to": 0.7000000000000001,
+      "count": 2024,
+      "mean_probability": 0.6505370029951945,
+      "observed_rate": 0.6724308300395256,
+      "gap": 0.021893827044331182
+    },
+    {
+      "bin": 7,
+      "from": 0.7000000000000001,
+      "to": 0.8,
+      "count": 2207,
+      "mean_probability": 0.7518462787155443,
+      "observed_rate": 0.7607612143180789,
+      "gap": 0.008914935602534535
+    },
+    {
+      "bin": 8,
+      "from": 0.8,
+      "to": 0.9,
+      "count": 2286,
+      "mean_probability": 0.8490832003489444,
+      "observed_rate": 0.8832020997375328,
+      "gap": 0.034118899388588475
+    },
+    {
+      "bin": 9,
+      "from": 0.9,
+      "to": 1.0,
+      "count": 1311,
+      "mean_probability": 0.9236513286640756,
+      "observed_rate": 0.9549961861174676,
+      "gap": 0.031344857453391994
+    }
+  ],
+  "expected_calibration_error": 0.025316941682768854,
+  "confusion_matrix": [
+    [
+      3346,
+      2343
+    ],
+    [
+      1409,
+      7302
+    ]
+  ],
+  "model_version": "hgb_regularized-20260917105441-b6e211",
+  "generated_at": "2026-09-17T11:17:28.938598Z",
+  "rows": 14400,
+  "positive_rate": 0.6049305555555555,
+  "by_skill": [
+    {
+      "segment": "DOCS",
+      "rows": 2375,
+      "accuracy": 0.7528421052631579,
+      "precision": 0.7693726937269373,
+      "recall": 0.8550922761449077,
+      "f1": 0.8099708643573972,
+      "log_loss": 0.5165376270953411,
+      "brier": 0.17180090746459503,
+      "roc_auc": 0.8102669202911587,
+      "pr_auc": 0.8691011550953023
+    },
+    {
+      "segment": "INTERNET",
+      "rows": 2396,
+      "accuracy": 0.7341402337228714,
+      "precision": 0.7467447916666666,
+      "recall": 0.8222222222222222,
+      "f1": 0.7826680313886045,
+      "log_loss": 0.5309095463870149,
+      "brier": 0.17770985391393593,
+      "roc_auc": 0.8034646357227002,
+      "pr_auc": 0.8469561126973477
+    },
+    {
+      "segment": "LEGAL",
+      "rows": 2323,
+      "accuracy": 0.7326732673267327,
+      "precision": 0.7455029980013325,
+      "recall": 0.8240058910162003,
+      "f1": 0.782791185729276,
+      "log_loss": 0.5269178800937866,
+      "brier": 0.1766776513281012,
+      "roc_auc": 0.8066186177478311,
+      "pr_auc": 0.8561545704871469
+    },
+    {
+      "segment": "MEDIA",
+      "rows": 2484,
+      "accuracy": 0.7423510466988728,
+      "precision": 0.7660919540229885,
+      "recall": 0.851213282247765,
+      "f1": 0.8064125831820932,
+      "log_loss": 0.5175421092565756,
+      "brier": 0.17260660337525846,
+      "roc_auc": 0.8032454361054766,
+      "pr_auc": 0.8703611490394485
+    },
+    {
+      "segment": "SECURITY",
+      "rows": 2410,
+      "accuracy": 0.7394190871369295,
+      "precision": 0.7599510104102878,
+      "recall": 0.8402166553825322,
+      "f1": 0.7980707395498392,
+      "log_loss": 0.5211466784277119,
+      "brier": 0.17356719470448545,
+      "roc_auc": 0.8045508079948275,
+      "pr_auc": 0.8600946345061845
+    },
+    {
+      "segment": "TABLES",
+      "rows": 2412,
+      "accuracy": 0.7350746268656716,
+      "precision": 0.7526413921690491,
+      "recall": 0.8340220385674931,
+      "f1": 0.7912446912773603,
+      "log_loss": 0.5314605697138938,
+      "brier": 0.177522883179578,
+      "roc_auc": 0.7989443440082644,
+      "pr_auc": 0.8490531858469386
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "difficulty_gap",
+      "importance_mean": 0.03340949926454519,
+      "importance_std": 0.0015681660256667838
+    },
+    {
+      "feature": "task_difficulty",
+      "importance_mean": 0.021735080837970565,
+      "importance_std": 0.00210552331883458
+    },
+    {
+      "feature": "skill_response_time_mean_sec",
+      "importance_mean": 0.006679976310523428,
+      "importance_std": 0.0007686181962796857
+    },
+    {
+      "feature": "response_time_mean_sec",
+      "importance_mean": 0.005665632301027212,
+      "importance_std": 0.0010241392549686337
+    },
+    {
+      "feature": "response_time_std_sec",
+      "importance_mean": 0.002701840344364026,
+      "importance_std": 0.00039138011973047275
+    },
+    {
+      "feature": "user_accuracy_total",
+      "importance_mean": 0.002190363120217531,
+      "importance_std": 0.0006769741208222082
+    },
+    {
+      "feature": "skill_accuracy_last10",
+      "importance_mean": 0.0009559322712922758,
+      "importance_std": 0.0002748337005520242
+    },
+    {
+      "feature": "skill_response_time_last_sec",
+      "importance_mean": 0.0008038895819197811,
+      "importance_std": 0.0001561264572965515
+    },
+    {
+      "feature": "response_time_last_sec",
+      "importance_mean": 0.0004169494533842577,
+      "importance_std": 8.966796764211038e-05
+    },
+    {
+      "feature": "skill_accuracy",
+      "importance_mean": 0.00041655434859612096,
+      "importance_std": 8.50884362139474e-05
+    },
+    {
+      "feature": "skill_accuracy_last5",
+      "importance_mean": 0.00038611835114868984,
+      "importance_std": 0.00010675581227685325
+    },
+    {
+      "feature": "seconds_since_last_task_attempt",
+      "importance_mean": 0.00037660153410973285,
+      "importance_std": 0.00019026330315157573
+    },
+    {
+      "feature": "user_attempts_total",
+      "importance_mean": 0.00036016841183794115,
+      "importance_std": 7.811424206231545e-05
+    },
+    {
+      "feature": "local_hour_cos",
+      "importance_mean": 0.00035353811034523065,
+      "importance_std": 8.580913221246739e-05
+    },
+    {
+      "feature": "local_hour_sin",
+      "importance_mean": 0.0003111375948194328,
+      "importance_std": 8.097199822357897e-05
+    },
+    {
+      "feature": "seconds_since_last_attempt",
+      "importance_mean": 0.000270981670019399,
+      "importance_std": 3.7610242348808516e-05
+    },
+    {
+      "feature": "speed_ratio",
+      "importance_mean": 0.00023795570790719479,
+      "importance_std": 6.209203499606208e-05
+    },
+    {
+      "feature": "skill_correct_streak",
+      "importance_mean": 0.00022491031616251323,
+      "importance_std": 6.513313796517229e-05
+    },
+    {
+      "feature": "skill_exposure_share",
+      "importance_mean": 0.0001942609954730501,
+      "importance_std": 5.489473171661687e-05
+    },
+    {
+      "feature": "skill_code",
+      "importance_mean": 0.00018192319413683488,
+      "importance_std": 4.999065889751225e-05
+    },
+    {
+      "feature": "user_attempts_7d",
+      "importance_mean": 9.975757056880363e-05,
+      "importance_std": 3.0589176486852654e-05
+    },
+    {
+      "feature": "seconds_since_last_skill_attempt",
+      "importance_mean": 8.958348720730091e-05,
+      "importance_std": 4.813253548136017e-05
+    },
+    {
+      "feature": "user_accuracy_last10",
+      "importance_mean": 6.431815555387743e-05,
+      "importance_std": 2.5282317863178324e-05
+    },
+    {
+      "feature": "task_estimated_time_sec",
+      "importance_mean": 4.999963499804916e-05,
+      "importance_std": 1.874726743316544e-05
+    },
+    {
+      "feature": "correct_streak",
+      "importance_mean": 4.805343451909083e-05,
+      "importance_std": 1.3619456234161035e-05
+    },
+    {
+      "feature": "skill_attempts",
+      "importance_mean": 2.4090468192267123e-05,
+      "importance_std": 1.4224208336069745e-05
+    },
+    {
+      "feature": "skill_incorrect_streak",
+      "importance_mean": 1.4571535681917603e-05,
+      "importance_std": 1.8185289178370987e-05
+    },
+    {
+      "feature": "task_cognitive_level",
+      "importance_mean": 1.1195265057273307e-05,
+      "importance_std": 5.48930292902278e-06
+    },
+    {
+      "feature": "user_accuracy_last5",
+      "importance_mean": 8.548917409612055e-06,
+      "importance_std": 2.1454104959660583e-05
+    },
+    {
+      "feature": "task_exposure_share",
+      "importance_mean": 3.1807597032196265e-06,
+      "importance_std": 1.448851452722406e-05
+    },
+    {
+      "feature": "incorrect_streak",
+      "importance_mean": -7.092699927380153e-08,
+      "importance_std": 6.163707904153472e-06
+    },
+    {
+      "feature": "user_attempts_24h",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "skill_attempts_7d",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "task_attempts",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "task_accuracy",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "task_discrimination",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "practice_density_7d",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "is_first_skill_attempt",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "is_first_task_attempt",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    }
+  ]
+}

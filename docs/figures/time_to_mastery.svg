@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+<rect width="100%" height="100%" fill="white"/>
+<text x="30" y="38" font-family="Arial" font-size="24" font-weight="700">Заданий до порога мастерства</text>
+<text x="30" y="64" font-family="Arial" font-size="13" fill="#555">Restricted mean, 60 matched learners, horizon 90</text>
+<text x="225" y="116" text-anchor="end" font-family="Arial" font-size="15">ML-adaptive</text>
+<rect x="240" y="92" width="432.6" height="34" rx="6" fill="#5968c8"/>
+<text x="682.6" y="116" font-family="Arial" font-size="15" font-weight="700">73,3</text>
+<text x="225" y="186" text-anchor="end" font-family="Arial" font-size="15">Random</text>
+<rect x="240" y="162" width="499.2" height="34" rx="6" fill="#5968c8"/>
+<text x="749.2" y="186" font-family="Arial" font-size="15" font-weight="700">84,6</text>
+</svg>

@@ -1,0 +1,87 @@
+{
+  "synthetic_experiment": true,
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "learners_per_seed": 24,
+  "steps_per_learner": 90,
+  "runs": [
+    {
+      "seed": 11,
+      "adaptive_tasks": 80.375,
+      "random_tasks": 87.41666666666667,
+      "tasks_saved": 7.041666666666667,
+      "relative_task_reduction": 0.08055290753098193,
+      "time_to_mastery_p_value": 0.0003332222592469177,
+      "time_to_mastery_significant": true,
+      "mastery_gain_advantage": 0.048357513517774196,
+      "mastery_gain_p_value": 0.0003332222592469177,
+      "mastery_gain_significant": true
+    },
+    {
+      "seed": 23,
+      "adaptive_tasks": 72.70833333333333,
+      "random_tasks": 80.91666666666667,
+      "tasks_saved": 8.208333333333334,
+      "relative_task_reduction": 0.10144181256436674,
+      "time_to_mastery_p_value": 0.0003332222592469177,
+      "time_to_mastery_significant": true,
+      "mastery_gain_advantage": 0.04266216171309926,
+      "mastery_gain_p_value": 0.0003332222592469177,
+      "mastery_gain_significant": true
+    },
+    {
+      "seed": 37,
+      "adaptive_tasks": 69.29166666666667,
+      "random_tasks": 78.33333333333333,
+      "tasks_saved": 9.041666666666666,
+      "relative_task_reduction": 0.1154255319148935,
+      "time_to_mastery_p_value": 0.0003332222592469177,
+      "time_to_mastery_significant": true,
+      "mastery_gain_advantage": 0.043246738456967616,
+      "mastery_gain_p_value": 0.0003332222592469177,
+      "mastery_gain_significant": true
+    },
+    {
+      "seed": 53,
+      "adaptive_tasks": 73.33333333333333,
+      "random_tasks": 82.875,
+      "tasks_saved": 9.541666666666666,
+      "relative_task_reduction": 0.11513323278029167,
+      "time_to_mastery_p_value": 0.000999666777740753,
+      "time_to_mastery_significant": true,
+      "mastery_gain_advantage": 0.04443289694563002,
+      "mastery_gain_p_value": 0.0003332222592469177,
+      "mastery_gain_significant": true
+    },
+    {
+      "seed": 71,
+      "adaptive_tasks": 72.66666666666667,
+      "random_tasks": 79.54166666666667,
+      "tasks_saved": 6.875,
+      "relative_task_reduction": 0.08643268727082241,
+      "time_to_mastery_p_value": 0.000999666777740753,
+      "time_to_mastery_significant": true,
+      "mastery_gain_advantage": 0.03753337733043418,
+      "mastery_gain_p_value": 0.0003332222592469177,
+      "mastery_gain_significant": true
+    }
+  ],
+  "summary": {
+    "positive_time_to_mastery_runs": 5,
+    "significant_time_to_mastery_runs": 5,
+    "mean_tasks_saved": 8.141666666666666,
+    "min_tasks_saved": 6.875,
+    "max_tasks_saved": 9.541666666666666,
+    "positive_mastery_gain_runs": 5,
+    "significant_mastery_gain_runs": 5,
+    "mean_mastery_gain_advantage": 0.043246537592781055,
+    "min_mastery_gain_advantage": 0.03753337733043418,
+    "max_mastery_gain_advantage": 0.048357513517774196
+  },
+  "interpretation_guardrail": "Seed robustness checks Monte Carlo stability of the declared synthetic experiment and does not replace validation on real learners."
+}
